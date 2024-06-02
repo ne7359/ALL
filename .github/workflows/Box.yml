@@ -28,9 +28,6 @@ jobs:
     - name: Install dependencies
       run: |
         pip install requests
-    - name: Update TV Box URLs
-      run: |
-        python update.py
 
     - name: Check URLs and Update JSON
       run: python tv/script.py
