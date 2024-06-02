@@ -16,7 +16,7 @@ jobs:
     - name: 读取TV源数据
       uses: actions/checkout@v4
       with:
-        repository: ${{ inputs.user_godown }}
+        repository: ${{ secrets.user_godown }}
         ref: publish
         path: code
       
