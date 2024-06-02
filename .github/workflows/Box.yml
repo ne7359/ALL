@@ -30,7 +30,7 @@ jobs:
 
     - name: Check URLs and Update JSON
       working-directory: code
-      run: python script.py
+      run: python tv/script.py
 
     - name: Commit and push if changes
       working-directory: code
