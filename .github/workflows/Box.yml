@@ -41,3 +41,10 @@ jobs:
         git add -A
         git commit -m "Update tvbox.json file" -a || echo "No changes to commit"
         git push
+
+    - name: 删除旧的GitHub-workflow
+      uses: Mattraks/delete-workflow-runs@main
+      with:
+        repository: ${{ github.repository }}
+        retain_days: 1
+        keep_minimum_runs: 3    #保留多少个workflow不删除
