@@ -19,6 +19,7 @@ jobs:
         repository: ${{ secrets.user_godown }}
         ref: publish
         path: code
+        token: ${{ secrets.gh_token }}
       
     - name: Set up Python 3.8
       uses: actions/setup-python@v5
