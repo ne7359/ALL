@@ -17,7 +17,7 @@ jobs:
       uses: actions/checkout@v4
       with:
         repository: ${{ secrets.user_godown }}
-        ref: publish
+        ref: main
         path: code
         token: ${{ secrets.gh_token }}
       
