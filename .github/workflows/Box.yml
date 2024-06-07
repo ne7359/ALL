@@ -16,7 +16,7 @@ jobs:
     - name: 读取TV源数据
       uses: actions/checkout@v4
       with:
-        repository: ${{ secrets.user_godown }}
+        repository: ne7359/url
         ref: main
         path: code
         token: ${{ secrets.gh_token }}
